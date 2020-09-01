@@ -1,0 +1,20 @@
+{
+	"id": "smartwatch",
+	"name": "Smartwatch",
+	"price": 1199,
+	"description": "The most advanced Smartwatch yet, featuring the Always-On Retina display, the ECG app, International Emergency Calling, Fall Detection and a built‑in compass.",
+	"stock": 5,
+	"image": "./api/products/smartwatch/smartwatch-img.jpg",
+	"reviews": [
+		{
+			"name": "Bill",
+			"rating": 5,
+			"description": "I really liked it. A very reasonably priced smartphone."
+		},
+		{
+			"name": "Barbara",
+			"rating": 3,
+			"description": "I liked it. But it's expensive."
+		}
+	]
+}

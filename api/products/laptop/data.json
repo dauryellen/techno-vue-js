@@ -1,0 +1,20 @@
+{
+	"id": "laptop",
+	"name": "Laptop",
+	"price": 2999,
+	"description": "Laptop Pro elevates the notebook to a whole new level of performance and portability. Wherever your ideas take you, you’ll get there faster than ever with high‑performance processors and memory, advanced graphics, incredibly fast storage and more.",
+	"stock": 12,
+	"image": "./api/products/laptop/laptop-img.jpg",
+	"reviews": [
+		{
+			"name": "Joe",
+			"rating": 5,
+			"description": "I really liked it. A very reasonably priced laptop."
+		},
+		{
+			"name": "Nate",
+			"rating": 5,
+			"description": "I really liked it."
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"id": "tablet",
+	"name": "Tablet",
+	"price": 899,
+	"description": "The new Tablet combines the power and capability of a computer with the ease of use and versatility you’d never expect from one. And now it’s even more versatile, with a larger 10.2‑inch Retina display, support for the full-size Smart Keyboard and the amazing new capabilities of TabletOS.",
+	"stock": 2,
+	"image": "./api/products/tablet/tablet-img.jpg",
+	"reviews": [
+		{
+			"name": "Bill",
+			"rating": 5,
+			"description": "I really liked it. A very reasonably priced smartphone."
+		},
+		{
+			"name": "Barbara",
+			"rating": 4,
+			"description": "I liked it. But it's expensive."
+		}
+	]
+}

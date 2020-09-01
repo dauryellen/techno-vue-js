@@ -1,0 +1,20 @@
+{
+	"id": "smartphone",
+	"name": "Smartphone",
+	"price": 1299,
+	"description": "Smartphone SE is made to run the latest features — and even some that haven’t been invented yet. So you can use Dark Mode, Riri Shortcuts and the new Photos app now. And take advantage of feature and security updates in the future.",
+	"stock": 3,
+	"image": "./api/products/smartphone/smartphone-img.jpg",
+	"reviews": [
+		{
+			"name": "Roger",
+			"rating": 5,
+			"description": "I really liked it. A very reasonably priced smartphone."
+		},
+		{
+			"name": "Nathaly",
+			"rating": 4,
+			"description": "I liked it. But it's expensive."
+		}
+	]
+}

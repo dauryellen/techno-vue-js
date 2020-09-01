@@ -1,0 +1,20 @@
+{
+	"id": "speaker",
+	"name": "Speaker",
+	"price": 599,
+	"description": "Speaker BOOM 3 is a super-portable wireless speaker built for adventure. It delivers immersive 360° sound with deep bass, all carefully balanced so you can hear every note.",
+	"stock": 3,
+	"image": "./api/products/speaker/speaker-img.jpg",
+	"reviews": [
+		{
+			"name": "Bill",
+			"rating": 5,
+			"description": "I really liked it. A very reasonably priced smartphone."
+		},
+		{
+			"name": "Barbara",
+			"rating": 4,
+			"description": "I liked it. But it's expensive."
+		}
+	]
+}
