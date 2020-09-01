@@ -12,4 +12,7 @@ const vm = new Vue({
 				});
 		},
 	},
+	created() {
+		this.fetchProducts();
+	},
 });
