@@ -20,7 +20,7 @@
 				<div v-for="product in products" :key="product.id" class="product">
 					<img :src="product.image" :alt="product.name" class="product-img" />
 					<div class="product-info">
-						<span class="product-price">{{ product.price }}</span>
+						<span class="product-price">{{ product.price | formatPrice}}</span>
 						<h2 class="product-title">{{ product.name }}</h2>
 					</div>
 				</div>
