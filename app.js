@@ -4,6 +4,8 @@ const vm = new Vue({
 		products: [],
 		product: false,
 		cart: [],
+		alertMessage: "Item added to cart",
+		alertActive: false,
 	},
 	filters: {
 		formatPrice(value) {
@@ -56,6 +58,7 @@ const vm = new Vue({
 			this.product.stock--;
 			const { id, name, price } = this.product;
 			this.cart.push({ id, name, price });
+			this.alert(`${name} added to cart`);
 		},
 		removeItem(index) {
 			this.product.stock++;
@@ -64,6 +67,13 @@ const vm = new Vue({
 		checkLocalStorage() {
 			if (window.localStorage.cart)
 				this.cart = JSON.parse(window.localStorage.cart);
+		},
+		alert(message) {
+			this.alertMessage = message;
+			this.alertActive = true;
+			setTimeout(() => {
+				this.alertActive = false;
+			}, 1500);
 		},
 	},
 	watch: {

@@ -51,7 +51,7 @@
 					</div>
 					<div class="modal-data">
 						<button @click="product = false" class="modal-close">X</button>
-						<span class="modal-price">{{ product.price }}</span>
+						<span class="modal-price">{{ product.price | formatPrice }}</span>
 						<h2 class="modal-title">{{ product.name }}</h2>
 						<p class="modal-description">{{ product.description }}</p>
 						<button v-if="product.stock > 0" @click="addItem" class="modal-btn">
@@ -72,6 +72,10 @@
 					</div>
 				</div>
 			</section>
+
+			<div class="alert" :class="{ active: alertActive }">
+				<p class="alert-message">{{ alertMessage }}</p>
+			</div>
 		</div>
 
 		<script src="./app.js"></script>
