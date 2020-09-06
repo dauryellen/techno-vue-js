@@ -61,8 +61,18 @@ const vm = new Vue({
 			this.product.stock++;
 			this.cart.splice(index, 1);
 		},
+		checkLocalStorage() {
+			if (window.localStorage.cart)
+				this.cart = JSON.parse(window.localStorage.cart);
+		},
+	},
+	watch: {
+		cart() {
+			window.localStorage.cart = JSON.stringify(this.cart);
+		},
 	},
 	created() {
 		this.fetchProducts();
+		this.checkLocalStorage();
 	},
 });
