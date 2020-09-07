@@ -18,15 +18,9 @@
 		<div id="app">
 			<header class="header">
 				<img src="./assets/techno.svg" alt="Techno" class="logo" />
-				<div class="menu-cart">
+				<div class="menu-cart" @click="activeCart = true">
 					{{ totalCart | formatPrice}} | {{ cart.length }}
 				</div>
-				<ul>
-					<li v-for="(item, index) in cart">
-						<p>{{ item.name }}</p>
-						<button @click="removeItem(index)">Remove</button>
-					</li>
-				</ul>
 			</header>
 
 			<section class="products">
@@ -70,6 +64,33 @@
 							</li>
 						</ul>
 					</div>
+				</div>
+			</section>
+
+			<section
+				class="modal-cart"
+				:class="{ active: activeCart }"
+				@click="clickOut"
+			>
+				<div class="cart-container">
+					<button class="close-cart" @click="activeCart = false">X</button>
+					<h2 class="title-cart">Cart</h2>
+					<div v-if="cart.length > 0">
+						<ul class="list-cart">
+							<li v-for="(item, index) in cart" class="item-cart">
+								<p>{{ item.name }}</p>
+								<p class="price-cart">{{ item.price | formatPrice }}</p>
+								<button class="remove-cart" @click="removeItem(index)">
+									X
+								</button>
+							</li>
+						</ul>
+						<p class="total-cart">
+							{{ totalCart | formatPrice }}
+						</p>
+						<button class="pay">Pay</button>
+					</div>
+					<p v-else>The cart is empty.</p>
 				</div>
 			</section>
 
